@@ -47,13 +47,13 @@ jobs:
 
       - name: Push
         run: |-
-          docker push cygnetops/multi-client-k8s-gh:latest
-          docker push cygnetops/multi-server-k8s-pgfix-gh:latest
-          docker push cygnetops/multi-worker-k8s-gh:latest
+          docker push aisimplified/multi-client-k8s-gh:latest
+          docker push aisimplified/multi-server-k8s-pgfix-gh:latest
+          docker push aisimplified/multi-worker-k8s-gh:latest
 
-          docker push cygnetops/multi-client-k8s-gh:${{ env.SHA }}
-          docker push cygnetops/multi-server-k8s-pgfix-gh:${{ env.SHA }}
-          docker push cygnetops/multi-worker-k8s-gh:${{ env.SHA }}
+          docker push aisimplified/multi-client-k8s-gh:${{ env.SHA }}
+          docker push aisimplified/multi-server-k8s-pgfix-gh:${{ env.SHA }}
+          docker push aisimplified/multi-worker-k8s-gh:${{ env.SHA }}
 
       - name: Apply
         run: |-
